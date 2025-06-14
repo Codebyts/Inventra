@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inventra</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <div class="title-group">
+                <h1>Inventra</h1>
+                <p class="tagline"><em>Smart Inventory. Simple Control.</em></p>
+            </div>
+            <button id="toggleTheme" title="Toggle Theme">🌙</button>
+        </div>
+
+
+        <form id="itemForm">
+        <input type="text" id="itemName" placeholder="Item Name" required />
+        <input type="number" id="itemQuantity" placeholder="Quantity" required min="1" />
+        <input type="text" id="itemCategory" placeholder="Category" required />
+        <button type="submit">Add Item</button>
+        </form>
+
+        <table id="inventoryTable">
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Category</th>
+            <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        </table>
+
+        <!-- Toast container -->
+        <div id="toastContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
